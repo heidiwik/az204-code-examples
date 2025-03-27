@@ -1,0 +1,64 @@
+﻿@model LinkTool.Models.Link
+
+@{
+    ViewData["Title"] = "AZ-204 Link Tool";
+}
+
+
+<div class="text-center">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-8 offset-md-2 col-sm-12">
+
+        @if (ViewBag.result != null)
+        {
+            <div class="alert alert-@ViewBag.Notice" role="alert">
+                @ViewBag.Result
+            </div>
+        }
+
+        @if (ViewBag.Instructions != null)
+        {
+            <div>
+                @ViewBag.Instructions
+            </div>
+        }
+
+        <form asp-action="SendForm" method="post" enctype="multipart/form-data">
+
+            <div class="form-group form-group-row">
+                <label for="linkUrl">Link url <span class="red">*</span></label>
+                <input asp-for="LinkUrl" class="form-control" id="linkUrl" placeholder="www.link.com" value="">
+                <span asp-validation-for="LinkUrl" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-group-row">
+                <label for="LinkText">Link text <span class="red">*</span></label>
+                <input asp-for="LinkText" class="form-control" id="LinkText" placeholder="Link text..." value="">
+                <span asp-validation-for="LinkText" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-group-row">
+                <label for="LinkCategory">Link category <span class="red">*</span></label>
+                <input asp-for="LinkCategory" class="form-control" id="LinkCategory" placeholder="Tools..." value="">
+                <span asp-validation-for="LinkCategory" class="text-danger"></span>
+            </div>
+
+            <div class="form-group form-group-row">
+                <label for="eventCategory">Learning path<span class="red">*</span></label>
+                <select asp-for="LinkLearningPath" asp-items="Model.LinkLearningPath" class="form-control" id="LearningPath"></select>
+                <span asp-validation-for="LinkLearningPath" class="text-danger"></span>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary" id="submit-btn">Send</button>
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Saving...</span>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>

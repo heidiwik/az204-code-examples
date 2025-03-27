@@ -8,8 +8,7 @@ using Microsoft.Extensions.Configuration;
 
 
 namespace AZ204_Blobstorage
-{
-    class Program
+{    class Program
     {
         public static void Main()
         {
