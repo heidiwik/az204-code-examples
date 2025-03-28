@@ -4,6 +4,8 @@ This repository contains a collection of code samples for the AZ-204 course. The
 
 Feel free to explore the projects and use them to reinforce your understanding.
 
+See official course material: https://learn.microsoft.com/en-us/training/courses/az-204t00  
+
 Found something to improve? Pull requests are always welcome.
 
 ## Blob Storage demo
