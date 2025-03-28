@@ -2,15 +2,6 @@
 
 LinkListTool Function is a .NET 8 Azure Function that utilizes Azure Table Storage to manage a list of links. This project includes utilities for interacting with Azure Table Storage, specifically for saving and retrieving links.
 
-## LinkList application
-
-LinkList application consist of four parts: 
-- LinkList web application is an application designed to provide additional information for the AZ-204 course by managing and storing links
-- LinkListTool web application is an application that provides the functionality to add links to database using web application
-- LinkListTool function processes links submitted through the application's form and stores them in Azure Table Storage
-- LinkListTool Azure table storage is a storage account that stores links submitted through the application's form
-
-
 ## Prerequisites
 
 - .NET 8 SDK

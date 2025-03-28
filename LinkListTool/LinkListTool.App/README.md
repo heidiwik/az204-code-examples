@@ -6,16 +6,6 @@ Purpose of this project is to provide additional information for the AZ-204 cour
 
 This application calls a Azure Function to process and store links in Azure Table Storage. Add function URL to `appsettings.json` file.
 
-
-## LinkList application
-
-LinkList application consist of four parts: 
-- LinkList web application is an application designed to provide additional information for the AZ-204 course by managing and storing links
-- LinkListTool web application is an application that provides the functionality to add links to database using web application
-- LinkListTool function processes links submitted through the application's form and stores them in Azure Table Storage
-- LinkListTool Azure table storage is a storage account that stores links submitted through the application's form
-
-
 ## Getting Started
 
 To get started with this Blazor project, follow these steps:
