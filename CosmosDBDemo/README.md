@@ -1,4 +1,4 @@
-# CosmosDBDemo
+# Cosmos DB Demo
 
 ## Overview
 CosmosDBDemo is a .NET 8 project demonstrating how to interact with Azure Cosmos DB. 
