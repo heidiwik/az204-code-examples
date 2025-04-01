@@ -9,8 +9,6 @@ Found something to improve? Pull requests are always welcome.
 ## Blob Storage demo
 A console application demonstrating how to interact with Azure Blob Storage, including uploading, downloading, and managing blobs. 
 
-Based on [Microsoft Learn exercise](https://learn.microsoft.com/en-us/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet)
-
 ## Cosmos DB demo
 A console application that demonstrates how to work with Azure Cosmos DB.
 
