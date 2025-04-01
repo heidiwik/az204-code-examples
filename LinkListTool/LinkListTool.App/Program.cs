@@ -8,10 +8,14 @@ builder.Services.Configure<Microsoft.ApplicationInsights.Extensibility.Telemetry
 config.SetAzureTokenCredential(new DefaultAzureCredential());
 });
 
-builder.Services.AddApplicationInsightsTelemetry(new Microsoft.ApplicationInsights.AspNetCore.Extensions.ApplicationInsightsServiceOptions
-{
-    ConnectionString = builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]
-});
+//builder.Services.AddApplicationInsightsTelemetry(new Microsoft.ApplicationInsights.AspNetCore.Extensions.ApplicationInsightsServiceOptions
+//{
+//    ConnectionString = builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]
+//});
+
+builder.Services.AddApplicationInsightsTelemetry();
+
+builder.Services.AddMvc();
 
 var app = builder.Build();
 
