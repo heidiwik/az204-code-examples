@@ -15,7 +15,10 @@ Based on [Microsoft Learn exercise](https://learn.microsoft.com/en-us/training/m
 A console application that demonstrates how to work with Azure Cosmos DB.
 
 ## Graph API demo
-A Azure function that demonstraters how to authenticate to Microsoft Graph API and how to fetch data from Graph API.
+An Azure function that demonstraters how to authenticate and fetch data from Microsoft Graph API.
+
+## User Auth Demo
+A console app demonstrating how to use [MSAL.NET](https://learn.microsoft.com/en-us/entra/msal/dotnet/) to authenticate users and acquire tokens.
 
 ## LinkList application & LinkListTool
 **LinkList** is a web application designed to provide additional information for the AZ-204 course by providing links to resources and topics covered in the course.
